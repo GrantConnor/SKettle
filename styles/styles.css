@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    background-color: rgb(255, 108, 49);
+    scroll-behavior: smooth;
+}
+
+.background {
+    width:100%;
+    height: 100%;
+    filter: blur(3px);
+    position: absolute;
+    filter: grayscale();
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background-color: rgb(255, 108, 49);
+    height: 600px;
+    width: 900px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    position: absolute;
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    padding-bottom: 50px;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    border-radius: 2px;
+}
+
+.nav li {
+    display: flex;
+    margin-left: auto;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.15em;
+    text-shadow: 0 0 10px white;
+}
+
+.nav li:hover {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.nav li:nth-of-type(1) {
+    margin-left: auto;
+}
+
+.nav li:nth-of-type(4) {
+    margin-right: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+main h1 {
+    margin-left: 50px;
+    width: 40%;
+    font-family: 'Caprasimo', cursive;
+    font-size: 3.6em;
+    text-shadow: 0 0 10px white;
+}
+
+.burger {
+    margin-top: -320px;
+    margin-left: 550px;
+    width: 280px;
+    height: 260px;
+    transform: rotate(8deg);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.aside {
+    margin-top: 350px;
+    height: 800px;
+    width: 1400px;
+    background-color:aliceblue;
+    z-index: 1;
+    transform: translateX(70px);
+    position: absolute;
+}
+
+main p {
+    font-size: 1.2em;
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+main button {
+    height: 50px;
+    width: 140px;
+    margin-left: 180px;
+    margin-top: 50px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 7px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+main button:hover {
+    cursor: pointer;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+
+aside {
+    display: flex;
+}
+
+.aside aside h1 {
+    margin-left: 40px;
+    font-size: 2.5em;
+    width: 800px;
+    color:rgb(0, 0, 0);
+    margin-top: 400px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.burger2,
+.sandwich {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.burger2 {
+    margin-top: 360px;
+}
+
+.sandwich {
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.menu {
+    background-color:rgb(255, 108, 49);
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin-top: 1150px;
+}
+
+.menu h1 {
+    color: aliceblue;
+    font-size: 2.8em;
+    margin-top: 100px;
+    margin-left: 300px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+}
+
+.menu-background {
+    margin-top: 200px;
+    margin-left: -120px;
+    height: 1200px;
+    width: 1400px;
+    background-color: rgb(0, 0, 0);
+}
+
+.menu-background ol {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-background ol li {
+    color: aliceblue;
+    font-size: 2.5em;
+    margin: auto;
+    text-decoration: underline;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px 0 20px 0;
+}
